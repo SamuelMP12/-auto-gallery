@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto Gallery</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: #fff;
+    }
+    header {
+      background-color: #1f1f1f;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: #ff3c00;
+    }
+    .parceria {
+      font-size: 1em;
+      color: #aaa;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      padding: 20px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #1f1f1f;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Auto Gallery</h1>
+    <p class="parceria">Parceria entre Samuel e ChatGPT 🤝</p>
+  </header>
+
+  <section class="gallery">
+    <img src="https://source.unsplash.com/600x400/?car,sport" alt="Carro esportivo">
+    <img src="https://source.unsplash.com/600x400/?car,luxury" alt="Carro de luxo">
+    <img src="https://source.unsplash.com/600x400/?car,classic" alt="Carro clássico">
+    <img src="https://source.unsplash.com/600x400/?car,supercar" alt="Supercarro">
+    <img src="https://source.unsplash.com/600x400/?car,garage" alt="Garagem">
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Auto Gallery. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
