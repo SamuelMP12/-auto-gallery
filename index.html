@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto Gallery</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: #fff;
+    }
+    header {
+      background-color: #1f1f1f;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: #ff3c00;
+    }
+    .parceria {
+      font-size: 1em;
+      color: #aaa;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      padding: 20px;
+    }
+    .card {
+      background-color: #1f1f1f;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.03);
+    }
+    .card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .card-info {
+      padding: 10px;
+    }
+    .card-info h3 {
+      margin: 0;
+      font-size: 1.2em;
+      color: #ff3c00;
+    }
+    .card-info p {
+      margin: 5px 0 0;
+      color: #ccc;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #1f1f1f;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Auto Gallery</h1>
+    <p class="parceria">Parceria entre Samuel e ChatGPT 🤝</p>
+  </header>
+
+  <section class="gallery">
+    <div class="card">
+      <img src="https://source.unsplash.com/600x400/?car,sport" alt="Carro esportivo">
+      <div class="card-info">
+        <h3>Mustang GT</h3>
+        <p>R$ 320.000</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://source.unsplash.com/600x400/?car,luxury" alt="Carro de luxo">
+      <div class="card-info">
+        <h3>BMW Série 7</h3>
+        <p>R$ 580.000</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://source.unsplash.com/600x400/?car,classic" alt="Carro clássico">
+      <div class="card-info">
+        <h3>Chevrolet Bel Air</h3>
+        <p>R$ 250.000</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://source.unsplash.com/600x400/?car,supercar" alt="Supercarro">
+      <div class="card-info">
+        <h3>Lamborghini Aventador</h3>
+        <p>R$ 3.200.000</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://source.unsplash.com/600x400/?car,garage" alt="Garagem">
+      <div class="card-info">
+        <h3>Garagem dos Sonhos</h3>
+        <p>Carros personalizados e raridades</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Auto Gallery. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
